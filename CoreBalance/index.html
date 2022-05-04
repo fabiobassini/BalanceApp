@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     
     <style type="text/css">
+
         .nascondi {
             display: none;
         }
@@ -354,78 +355,6 @@
 
             $( "#view2" ).on( "click", function() {
                 $( "#CE" ).dialog( "open" );
-            });
-
-            $( "#dati1" ).dialog({
-                modal: true,
-                resizable: false,
-                draggable: false,
-                width: 500,
-                height: 380,
-                autoOpen: false,
-                show: {
-                    effect: "blind",
-                    duration: 300
-                },
-                hide: {
-                    effect: "blind",
-                    duration: 300
-                },
-                title: "Mario Muto",
-                closeOnEscape: false,
-                buttons: {
-                    Chiudi: function() {
-                        $( this ).dialog( "close" );
-                    }
-                }
-            });
-
-            $( "#dati2" ).dialog({
-                modal: true,
-                resizable: false,
-                draggable: false,
-                width: 500,
-                height: 380,
-                autoOpen: false,
-                show: {
-                    effect: "blind",
-                    duration: 300
-                },
-                hide: {
-                    effect: "blind",
-                    duration: 300
-                },
-                title: "Pierluigi Araujo",
-                closeOnEscape: false,
-                buttons: {
-                    Chiudi: function() {
-                        $( this ).dialog( "close" );
-                    }
-                }
-            });
-
-            $( "#credits" ).dialog({
-                modal: true,
-                resizable: false,
-                draggable: false,
-                width: 500,
-                height: 380,
-                autoOpen: false,
-                show: {
-                    effect: "blind",
-                    duration: 300
-                },
-                hide: {
-                    effect: "blind",
-                    duration: 300
-                },
-                title: "Riferimenti Corso",
-                closeOnEscape: false,
-                buttons: {
-                    Chiudi: function() {
-                        $( this ).dialog( "close" );
-                    }
-                }
             });
 
             $( "#history1" ).dialog({
@@ -1222,6 +1151,8 @@
             </table>
         </div>
     </div>
+
+    
 </div>
 <div id="button_calcola" style="text-align: center; margin-top: 20px;">
     <button id="calcola" name="calcola" class="w3-btn w3-round-large" onclick="calcola()">Calcola</button>

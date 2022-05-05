@@ -1,0 +1,17 @@
+# Blocca l'accesso completo al sito
+Deny from all
+
+# per usare il sito eliminare (###)
+###
+
+
+# Block direct requests to the "public" subdirectory
+
+
+# un comment this code when ready
+
+# RewriteCond %{ENV:REDIRECT_STATUS} ^$
+# RewriteRule ^BalanceApp/public($|/) - [R=404]
+
+# # Rewrite all requests that are not already for the "public" subdirectory
+# RewriteRule !^BalanceApp/ BalanceApp/public%{REQUEST_URI} [L]

@@ -107,7 +107,7 @@ function inserisci_tax() {
         $("#tax_dialog").dialog("close");
         temp = (parseFloat(tax) / 100);
     } else {
-        alert("Inserisci tassazione (%)!");
+        alert("Inserisci tassazione - IRAP (%)!");
         $("#tax_dialog").dialog("open");
     }
 }

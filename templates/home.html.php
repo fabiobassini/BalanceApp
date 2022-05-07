@@ -1,9 +1,3 @@
-<div id="spinner" class="overlay">
-	<div class="d-flex justify-content-center">
-		<div id="spinner" class="spinner-border" role="status"></div>
-	</div>
-</div>
-
 <div class="jumbotron p-5">
 	<h1 class="display-4">Benvenuto!</h1>
 	<p class="lead">Questa è la sezione dedicata all'utilizzo dell'app.</p>

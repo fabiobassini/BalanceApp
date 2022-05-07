@@ -5,8 +5,21 @@
     <title>Calcolo del Bilancio</title>
 
     <link rel="stylesheet" type="text/css" href="js/jquery-ui.hot/jquery-ui.css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+
     
+    <script type="text/javascript">
+
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        // BrowserDetect.browser == 'Chrome'
+
+        if (document.referrer != "https://balance.altervista.org/index.php?action=start") {
+            if (isChrome) {
+                window.location = "https://balance.altervista.org/index.php"
+            }
+        }
+    </script>
+
     <style type="text/css">
 
         .nascondi {
@@ -441,9 +454,9 @@
     <input id = "anno" name = "anno" autocomplete = "on" placeholder = "Anno Bilancio">
 </div>
 
-<div id  = "tax_dialog" title = "Tassazione - IRAP (%)" style="text-align: center">
+<!-- <div id  = "tax_dialog" title = "Tassazione - IRAP (%)" style="text-align: center">
     <input id="tax" name="tax" autocomplete="on" placeholder="Inserisci tassazione (%)"/>
-</div>
+</div> -->
 
 <div id="tabs">
     <ul>

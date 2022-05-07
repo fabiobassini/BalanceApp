@@ -69,17 +69,23 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-		<script src="http://balance.altervista.org/stylesheet/js/start.js"></script>
-		<link rel="stylesheet" href="http://balance.altervista.org/stylesheet/css/sidebars.css">
-		<link rel="stylesheet" href="http://balance.altervista.org/stylesheet/css/spinner.css">
-		<link rel="stylesheet" href="http://balance.altervista.org/stylesheet/css/bilancio.css">
-		<link rel="stylesheet" href="http://balance.altervista.org/stylesheet/css/jumbotron.css">
+		<link rel="stylesheet" href="https://balance.altervista.org/stylesheet/css/sidebars.css">
+		<link rel="stylesheet" href="https://balance.altervista.org/stylesheet/css/spinner.css">
+		<link rel="stylesheet" href="https://balance.altervista.org/stylesheet/css/bilancio.css">
+		<link rel="stylesheet" href="https://balance.altervista.org/stylesheet/css/jumbotron.css">
 
 		<title><?=$title?></title>
-		<link rel="icon" type="image/png" href="http://balance.altervista.org/images/favicon.png" />
+		<link rel="icon" type="image/png" href="https://balance.altervista.org/images/favicon.png" />
 
 
 	</head>
+
+	<style>
+		html, 
+		body {
+    		height: 100%;
+		}
+	</style>
 	<body>
 		<main>
 			<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
@@ -113,7 +119,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="container">
+			<div class="container-fluid">
 				<!-- contenuto -->
 				<?= $output ?>
 				<!-- fine contenuto -->
@@ -125,6 +131,6 @@
 				</footer>
 			</div>
 		</main>
-		<script src="http://balance.altervista.org/stylesheet/js/sidebars.js"></script>
+		<script src="https://balance.altervista.org/stylesheet/js/sidebars.js"></script>
 	</body>
 </html>

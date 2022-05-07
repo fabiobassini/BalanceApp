@@ -101,16 +101,16 @@ function dare_avere(id) {
     }
 }
 
-function inserisci_tax() {
-    var tax = document.getElementById("tax").value;
-    if (tax != "") {
-        $("#tax_dialog").dialog("close");
-        temp = (parseFloat(tax) / 100);
-    } else {
-        alert("Inserisci tassazione - IRAP (%)!");
-        $("#tax_dialog").dialog("open");
-    }
-}
+// function inserisci_tax() {
+//     var tax = document.getElementById("tax").value;
+//     if (tax != "") {
+//         $("#tax_dialog").dialog("close");
+//         temp = (parseFloat(tax) / 100);
+//     } else {
+//         alert("Inserisci tassazione - IRAP (%)!");
+//         $("#tax_dialog").dialog("open");
+//     }
+// }
 
 function sta_inserisci() {
     var selected = $("#attivo").val();
@@ -688,7 +688,7 @@ function sta_inserisci() {
             }
         }
 
-        alert("Attenzione! Non è stato bilanciato correttamente il mastrino tra dare e avere nel Conto Economico! Bilancialo altrimenti non potrà essere chiuso il bilancio!");
+        // alert("Attenzione! Non è stato bilanciato correttamente il mastrino tra dare e avere nel Conto Economico! Bilancialo altrimenti non potrà essere chiuso il bilancio!");
     } else {
         alert("Scegli o dare o avere!");
     }
@@ -1172,7 +1172,7 @@ function stp_inserisci() {
             }
         }
 
-        alert("Attenzione! Non è stato bilanciato correttamente il mastrino tra dare e avere nel Conto Economico! Bilancialo altrimenti non potrà essere chiuso il bilancio!");
+        // alert("Attenzione! Non è stato bilanciato correttamente il mastrino tra dare e avere nel Conto Economico! Bilancialo altrimenti non potrà essere chiuso il bilancio!");
     } else {
         alert("Scegli o dare o avere!");
     }
@@ -1989,7 +1989,7 @@ function calcola() {
             $("#button_visualizza").show();
         }
     } else {
-        alert("Attenzione, attivo e passivo sono uguali a zero! Aggiungi informazioni");
+        alert("Attenzione, attivo e passivo sono uguali a zero! Aggiungi altri dati");
     }
 
     $("#ti").text(ti.toFixed(2)+"€");

@@ -88,7 +88,8 @@
 	</style>
 	<body>
 		<main>
-			<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+
+			<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height: auto;">
 				<a href="index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
 					<svg class="bi me-2" width="40" height="32">
 						<use xlink:href="#bootstrap"/>
@@ -106,6 +107,10 @@
 						</a>
 					</li>
 				</ul>
+				<p style="text-align: center;" class="mb-1">&copy; <?= date('Y') ?> Bassini Fabio</p>
+							<ul class="list-inline" style="text-align: center;">
+								<li class="list-inline-item"><a href="https://github.com/fabiobassini"><i class="fab fa-github"></i> Github</a></li>
+							</ul>
 				<hr>
 				<div class="dropdown">
 					<a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -121,15 +126,15 @@
 			</div>
 			<div class="container-fluid">
 				<!-- contenuto -->
-				<?= $output ?>
+
+				<div class="row" style="height: 100%;">
+					<div class="col-12">
+						<?= $output ?>
+					</div>
+				</div>
 				<!-- fine contenuto -->
-				<footer class="text-muted text-center text-small footer fixed-bottom container" style="left:15%">
-					<p class="mb-1">&copy; <?= date('Y') ?> Bassini Fabio</p>
-					<ul class="list-inline">
-						<li class="list-inline-item"><a href="https://github.com/fabiobassini"><i class="fab fa-github"></i> Github</a></li>
-					</ul>
-				</footer>
 			</div>
+
 		</main>
 		<script src="https://balance.altervista.org/stylesheet/js/sidebars.js"></script>
 	</body>

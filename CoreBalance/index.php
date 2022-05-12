@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
 
     
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
         var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
         // BrowserDetect.browser == 'Chrome'
@@ -18,7 +18,7 @@
                 window.location = "https://balance.altervista.org/index.php"
             }
         }
-    </script>
+    </script> -->
 
     <style type="text/css">
 

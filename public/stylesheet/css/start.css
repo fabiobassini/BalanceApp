@@ -10,24 +10,26 @@
     color: black;
     display: block;
     cursor: pointer;
-  }
-  
-  .li-search:hover {
-    background-color: #eee; 
-  }
-  
-  .opt-icon {
+}
+
+.li-search:hover {
+    background-color: #eee;
+}
+
+.opt-icon {
     margin-top: 30px;
     margin-bottom: 20px
-  }
-  .card-block {
+}
+
+.card-block {
     width: 215px;
     border: 1px solid lightgrey;
     border-radius: 5px !important;
     background-color: #FAFAFA;
     margin-bottom: 30px
-  }
-  .radio {
+}
+
+.radio {
     display: inline-block;
     border-radius: 0;
     box-sizing: border-box;
@@ -35,15 +37,18 @@
     color: #000;
     font-weight: 500;
     opacity: 0.6;
-  }
-  .radio.selected {
+}
+
+.radio.selected {
     box-shadow: 0px 8px 16px 0px #EEEEEE;
     opacity: 1;
-  }
-  .radio:hover {
+}
+
+.radio:hover {
     background-color: #d7f5e8;
     opacity: 1;
-  }
-  .selected {
+}
+
+.selected {
     background-color: #e0f2ea;
-  }
+}

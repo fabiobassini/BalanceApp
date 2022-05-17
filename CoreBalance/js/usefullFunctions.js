@@ -1,10 +1,9 @@
-
 function visualizzaSelect(id) {
-    $("#" + id).selectmenu( "widget" ).show();
+    $("#" + id).selectmenu("widget").show();
 }
 
 function nascondiSelect(id) {
-    $("#" + id).selectmenu( "widget" ).hide();
+    $("#" + id).selectmenu("widget").hide();
 }
 
 function open_login() {
@@ -19,7 +18,7 @@ function dati_azienda() {
         $("#table_bilancio").dialog({
             title: "Bilancio " + name + " - " + year
         });
-        $( "#tax_dialog" ).dialog( "open" );
+        $("#tax_dialog").dialog("open");
     } else {
         alert("Inserisci le informazioni dell'azienda!");
         $("#login").dialog("open");
@@ -27,30 +26,29 @@ function dati_azienda() {
 }
 
 function dati1() {
-    $( "#dati1" ).dialog( "open" );
+    $("#dati1").dialog("open");
 }
 
 function dati2() {
-    $( "#dati2" ).dialog( "open" );
+    $("#dati2").dialog("open");
 }
 
 function open_credits() {
-    $( "#credits" ).dialog( "open" );
+    $("#credits").dialog("open");
 }
 
 function openBilancio() {
-    $( "#table_bilancio" ).dialog("open");
+    $("#table_bilancio").dialog("open");
 }
 
 function openCrono1() {
-    $( "#history1" ).dialog("open");
+    $("#history1").dialog("open");
 }
 
 function openCrono2() {
-    $( "#history2" ).dialog("open");
+    $("#history2").dialog("open");
 }
 
 function openCrono3() {
-    $( "#history3" ).dialog("open");
+    $("#history3").dialog("open");
 }
-

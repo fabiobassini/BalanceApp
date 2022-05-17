@@ -1,19 +1,103 @@
-
 var segno, checked = false;
-var v = 0, temp = 0;
+var v = 0,
+    temp = 0;
 
-var a_a = 0, a_b11 = 0,a_b12 = 0, a_b13 = 0, a_b14 = 0, a_b15 = 0, a_b16 = 0, a_b17 = 0,
-    a_b21 = 0, a_b22 = 0, a_b23 = 0, a_b24 = 0, a_b25 = 0, a_b31 = 0, a_b32 = 0, a_b33 = 0, a_b34 = 0,
-    a_c11 = 0, a_c12 = 0, a_c13 = 0, a_c14 = 0, a_c15 = 0, a_c21 = 0, a_c22 = 0, a_c23 = 0, a_c31 = 0,
-    a_c32 = 0, a_c33 = 0, a_c41 = 0, a_c42 = 0, a_c43 = 0, a_d = 0;
+var a_a = 0,
+    a_b11 = 0,
+    a_b12 = 0,
+    a_b13 = 0,
+    a_b14 = 0,
+    a_b15 = 0,
+    a_b16 = 0,
+    a_b17 = 0,
+    a_b21 = 0,
+    a_b22 = 0,
+    a_b23 = 0,
+    a_b24 = 0,
+    a_b25 = 0,
+    a_b31 = 0,
+    a_b32 = 0,
+    a_b33 = 0,
+    a_b34 = 0,
+    a_c11 = 0,
+    a_c12 = 0,
+    a_c13 = 0,
+    a_c14 = 0,
+    a_c15 = 0,
+    a_c21 = 0,
+    a_c22 = 0,
+    a_c23 = 0,
+    a_c31 = 0,
+    a_c32 = 0,
+    a_c33 = 0,
+    a_c41 = 0,
+    a_c42 = 0,
+    a_c43 = 0,
+    a_d = 0;
 
-var p_a1 = 0, p_a2 = 0, p_a3 = 0, p_b1 = 0, p_b2 = 0, p_b3 = 0, p_b4 = 0, p_b5 = 0, p_b6 = 0, p_b7 = 0, p_b8 = 0,p_b9 = 0, p_tfr = 0,
-    p_d1 = 0, p_d2 = 0, p_d3 = 0, p_d4 = 0, p_d5 = 0, p_d6 = 0, p_d7 = 0, p_d8 = 0, p_d9 = 0,
-    p_d10 = 0, p_d11 = 0, p_e = 0;
+var p_a1 = 0,
+    p_a2 = 0,
+    p_a3 = 0,
+    p_b1 = 0,
+    p_b2 = 0,
+    p_b3 = 0,
+    p_b4 = 0,
+    p_b5 = 0,
+    p_b6 = 0,
+    p_b7 = 0,
+    p_b8 = 0,
+    p_b9 = 0,
+    p_tfr = 0,
+    p_d1 = 0,
+    p_d2 = 0,
+    p_d3 = 0,
+    p_d4 = 0,
+    p_d5 = 0,
+    p_d6 = 0,
+    p_d7 = 0,
+    p_d8 = 0,
+    p_d9 = 0,
+    p_d10 = 0,
+    p_d11 = 0,
+    p_e = 0;
 
-var a1 = 0, a2 = 0, a3 = 0, a4 = 0, a5 = 0,a6 = 0, b1 = 0, b2 = 0, b3 = 0, b41 = 0, b42 = 0, b43 = 0, b44 = 0, b45 = 0,
-    b51 = 0, b52 = 0, b53 = 0, b54 = 0, b6 = 0, b7 = 0, b8 = 0, b9 = 0, c1 = 0, c21 = 0, c22 = 0, c23 = 0, c24 = 0,
-    c3 = 0, d11 = 0, d12 = 0, d13 = 0, d21 = 0, d22 = 0, d23 = 0, e1 = 0, e2 = 0, e3 = 0;
+var a1 = 0,
+    a2 = 0,
+    a3 = 0,
+    a4 = 0,
+    a5 = 0,
+    a6 = 0,
+    b1 = 0,
+    b2 = 0,
+    b3 = 0,
+    b41 = 0,
+    b42 = 0,
+    b43 = 0,
+    b44 = 0,
+    b45 = 0,
+    b51 = 0,
+    b52 = 0,
+    b53 = 0,
+    b54 = 0,
+    b6 = 0,
+    b7 = 0,
+    b8 = 0,
+    b9 = 0,
+    c1 = 0,
+    c21 = 0,
+    c22 = 0,
+    c23 = 0,
+    c24 = 0,
+    c3 = 0,
+    d11 = 0,
+    d12 = 0,
+    d13 = 0,
+    d21 = 0,
+    d22 = 0,
+    d23 = 0,
+    e1 = 0,
+    e2 = 0,
+    e3 = 0;
 
 function dare_avere(id) {
     if (id == "radio-1") {
@@ -713,7 +797,7 @@ function stp_inserisci() {
         if (selected == "fondo_rischi_e_oneri") {
             var valSel = $("#fondi_field").val();
 
-            if(valSel == "fro1") {
+            if (valSel == "fro1") {
                 if (segno == "+") {
                     p_a1 += v;
                     $("#mp_a1").text(p_a1.toFixed(2) + "€");
@@ -731,7 +815,7 @@ function stp_inserisci() {
                 }
             }
 
-            if(valSel == "fro2") {
+            if (valSel == "fro2") {
                 if (segno == "+") {
                     p_a2 += v;
                     $("#mp_a2").text(p_a2.toFixed(2) + "€");
@@ -749,7 +833,7 @@ function stp_inserisci() {
                 }
             }
 
-            if(valSel == "fro3") {
+            if (valSel == "fro3") {
                 if (segno == "+") {
                     p_a3 += v;
                     $("#mp_a3").text(p_a3.toFixed(2) + "€");
@@ -1629,7 +1713,7 @@ function c_inserisci() {
     var valore = document.getElementById("dato5").value;
     var voce;
 
-    if(checked == true) {
+    if (checked == true) {
         document.getElementById("dato5").value = "";
         valore = valore.replace(/[.]/g, "");
         valore = valore.replace(/[,]/g, ".");
@@ -1949,21 +2033,22 @@ function e_inserisci() {
 }
 
 function calcola() {
-    var t1 = 0.0, t2 = 0.0;
+    var t1 = 0.0,
+        t2 = 0.0;
 
-    var ti = a_b11 + a_b12 + a_b13 + a_b14 + a_b15 + a_b16 + a_b17 + a_b21 + a_b22 + a_b23 + a_b24 + a_b25 + a_b31
-        + a_b32 + a_b33 + a_b34;
-    var tac = a_c11 + a_c12 + a_c13 + a_c14 + a_c15 + a_c21 + a_c22 + a_c23 + a_c31 + a_c32 + a_c33 + a_c41 + a_c42
-        + a_c43;
+    var ti = a_b11 + a_b12 + a_b13 + a_b14 + a_b15 + a_b16 + a_b17 + a_b21 + a_b22 + a_b23 + a_b24 + a_b25 + a_b31 +
+        a_b32 + a_b33 + a_b34;
+    var tac = a_c11 + a_c12 + a_c13 + a_c14 + a_c15 + a_c21 + a_c22 + a_c23 + a_c31 + a_c32 + a_c33 + a_c41 + a_c42 +
+        a_c43;
 
     var td = p_d1 + p_d2 + p_d3 + p_d4 + p_d5 + p_d6 + p_d7 + p_d8 + p_d9 + p_d10 + p_d11;
 
-    var tv = a1 + a2 + a3 + a4 +a5 + a6;
+    var tv = a1 + a2 + a3 + a4 + a5 + a6;
     tv = Math.abs(tv);
     var tc = b1 + b2 + b3 + b41 + b42 + b43 + b44 + b45 + b51 + b52 + b53 + b54 + b6 + b7 + b8 + b9;
     tc = Math.abs(tc);
     var tprov = c1 + c21 + c22 + c23 + c24 - c3;
-    var trett = d11+ d12 + d13 + d21 + d22 + d23;
+    var trett = d11 + d12 + d13 + d21 + d22 + d23;
     var tprovs = e1 + e2;
 
     var ta = a_a + ti + tac + a_d;
@@ -1980,11 +2065,11 @@ function calcola() {
     var tp = p_a1 + t1 + p_a3 + tpn + p_tfr + td + p_e;
 
     if (ta != 0.0 && tp != 0.0) {
-        if ((ta-tp) != 0.0) {
+        if ((ta - tp) != 0.0) {
             alert("Attenzione, le voci dell'attivo e del passivo non sono state bilanciate!");
         } else {
             alert("Le voci dell'attivo e del passivo sono state bilanciate correttamente!");
-            $( "#table_bilancio" ).dialog("open");
+            $("#table_bilancio").dialog("open");
             $("#button_calcola").hide();
             $("#button_visualizza").show();
         }
@@ -1992,21 +2077,21 @@ function calcola() {
         alert("Attenzione, attivo e passivo sono uguali a zero! Aggiungi altri dati");
     }
 
-    $("#ti").text(ti.toFixed(2)+"€");
-    $("#tac").text(tac.toFixed(2)+"€");
-    $("#tpn").text(tpn.toFixed(2)+"€");
-    $("#td").text(td.toFixed(2)+"€");
-    $("#ta").text(ta.toFixed(2)+"€");
-    $("#tp").text(tp.toFixed(2)+"€");
+    $("#ti").text(ti.toFixed(2) + "€");
+    $("#tac").text(tac.toFixed(2) + "€");
+    $("#tpn").text(tpn.toFixed(2) + "€");
+    $("#td").text(td.toFixed(2) + "€");
+    $("#ta").text(ta.toFixed(2) + "€");
+    $("#tp").text(tp.toFixed(2) + "€");
 
-    $("#tv").text(tv.toFixed(2)+"€");
-    $("#tc").text(tc.toFixed(2)+"€");
-    $("#mo").text(mo.toFixed(2)+"€");
-    $("#ul").text(ul.toFixed(2)+"€");
+    $("#tv").text(tv.toFixed(2) + "€");
+    $("#tc").text(tc.toFixed(2) + "€");
+    $("#mo").text(mo.toFixed(2) + "€");
+    $("#ul").text(ul.toFixed(2) + "€");
 
-    $("#e3").text(e3.toFixed(2)+"€");
+    $("#e3").text(e3.toFixed(2) + "€");
 
-    $("#un").text(un.toFixed(2)+"€");
+    $("#un").text(un.toFixed(2) + "€");
 
     $("#mp_a2").text(t1.toFixed(2) + "€");
     $("#p_a2").text(t1.toFixed(2) + "€");
